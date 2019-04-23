@@ -1,0 +1,12 @@
+{
+  "name": "gmail-tadpoles-parser",
+  "version": "1.0.0",
+  "description": "A simple gmail parser of emails sent from tadpoles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alex Lapinski <contact@alexlapinski.name>",
+  "license": "MIT"
+}

@@ -1,5 +1,4 @@
 provider "google" {
-    credentials = "${file("CREDENTIALS_FILE.json")}"
     project = "gmail-parser-238501"
     region = "us-east4"
 }
@@ -28,4 +27,12 @@ resource "google_compute_instance" "default" {
 
         }
     }
+}
+
+resource "google_pubsub_topic" "example" {
+  name = "example-topic"
+
+  labels = {
+    foo = "bar"
+  }
 }

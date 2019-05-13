@@ -8,6 +8,33 @@ Extract the images from these emails, and store them in google drive.
  * NodeJS 
 
 ## Getting Started
+### Generating OAuth Credentials
+In order to make use of this gmail parser, you will first need 
+to setup oauth credentials with google apis. This can be done in
+the google cloud console ([here](https://developers.google.com/identity/protocols/OAuth2?hl=en_US#basicsteps)).
+
+Basically, you will need to generate OAuth credentials for your 
+account (developer account), and then download the json file.
+Once you have the oauth credentials json, update the ```.env```
+file's variable ```GOOGLE_CREDENTIALS_PATH``` to the location of
+this new ```credentials.json``` file.
+
+### OAuth token
+After you have the OAuth credentials, you'll be able to run this
+console program. 
+
+```
+npm run generate:token
+``` 
+
+Running this command will print out an URL that you must navigate
+to. After opening this window, you will authorize the 
+"Application" that represents the ```credentials.json``` generated
+previously. This will then download a ```token.json``` file.
+After generating the token, you can then run the ```npm start```
+part of this CLI. 
+
+
 ### Setting up Infrastructure
  * Setup Service User - [Tutorial](https://cloud.google.com/community/tutorials/managing-gcp-projects-with-terraform)
  * Download the GCP user credentials.

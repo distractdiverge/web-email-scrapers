@@ -30,8 +30,8 @@ const authorize = (credentials) => {
 	);
 
 	return readFileAsync(TOKEN_PATH)
-		.then(JSON.parse)
-		.then(oAuth2Client.setCredentials)
+		.then(content => JSON.parse(content))
+		.then(token => oAuth2Client.setCredentials(token))
 		.then(() => oAuth2Client);
 };
 

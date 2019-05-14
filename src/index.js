@@ -6,27 +6,33 @@ const settings = require('./settings');
 const googleConfig = settings.getGoogleConfig();
 const CREDENTIALS_PATH = googleConfig.credentials_path;
 
-const listLabels = (auth) => {
+const listLabels = (auth) => new Promise((resolve, reject) => {
 	const gmail = google.gmail({ version: 'v1', auth });
 
-	gmail.users.labels.list({
-		userId: 'me',
-	}, (err, res) => {
-		if (err) {
-			return console.log('The API returned an error', err);
-		}
 
-		const labels = res.data.labels;
-		if (labels.length) {
-			console.log('Labels:');
-			labels.forEach((label) => {
-				console.log(`- ${label.name}`);
-			});
-		} else {
-			console.log('No labels found');
-		}
-	});
-};
+	gmail.users.labels.list(
+		{
+			userId: 'me',
+		},
+		(err, res) => {
+			if (err) {
+				console.log('The API returned an error', err);
+				return reject(err);
+			}
+
+			const labels = res.data.labels;
+			if (labels.length) {
+				console.log('Labels:');
+				labels.forEach((label) => {
+					console.log(`- ${label.name}`);
+				});
+				resolve(labels);
+			} else {
+				console.log('No labels found');
+				resolve([]);
+			}
+		});
+});
 
 const main = () =>
 	readFileAsync(CREDENTIALS_PATH)

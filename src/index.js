@@ -1,44 +1,34 @@
-const { google } = require('googleapis');
 const { readFileAsync } = require('./fs.utils');
 const { authorize } = require('./google.client');
+const gmailService = require('./gmail.service');
 const settings = require('./settings');
 
 const googleConfig = settings.getGoogleConfig();
 const CREDENTIALS_PATH = googleConfig.credentials_path;
 
-const listLabels = (auth) => new Promise((resolve, reject) => {
-	const gmail = google.gmail({ version: 'v1', auth });
-
-
-	gmail.users.labels.list(
-		{
-			userId: 'me',
-		},
-		(err, res) => {
-			if (err) {
-				console.log('The API returned an error', err);
-				return reject(err);
-			}
-
-			const labels = res.data.labels;
-			if (labels.length) {
-				console.log('Labels:');
-				labels.forEach((label) => {
-					console.log(`- ${label.name}`);
-				});
-				resolve(labels);
-			} else {
-				console.log('No labels found');
-				resolve([]);
-			}
-		});
-});
-
 const main = () =>
 	readFileAsync(CREDENTIALS_PATH)
 		.then(JSON.parse)
 		.then(authorize)
-		.then(listLabels)
+		.then((auth) =>
+
+			gmailService.getLabels(auth)
+				.then((labels) => {
+					console.log(' # LABELS');
+					labels.forEach(label => {
+						console.log(JSON.stringify(label));
+					});
+					console.log('\n\n');
+				})
+				.then(() => gmailService.getEmailsByLabel(auth, ['Label_9180442277909378761', 'Label_7306260070784252485']))
+				.then((messages) => Promise.all(messages.map((message) => gmailService.getEmail(auth, message.id))))
+				.then(messages => {
+					console.log(' # MESSAGES ');
+					messages.forEach((message => console.log(JSON.stringify(message))));
+					console.log('\n\n');
+				})
+				.then(() => auth)
+		)
 		.catch(err => console.log('Error loading client secret file:', err));
 
 

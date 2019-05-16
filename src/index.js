@@ -21,6 +21,7 @@ const main = () =>
 					});
 					console.log('\n\n');
 				})
+                // TODO: Make labels configurable
 				.then(() => gmailService.getEmailsByLabel(auth, ['Label_9180442277909378761', 'Label_7306260070784252485']))
 				.then((messages) => Promise.all(messages.map((message) => gmailService.getEmail(auth, message.id))))
 				.then((messages) => Promise.all(messages.map((message) => emailService.parseEmail(message.payload.body))))

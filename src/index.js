@@ -1,6 +1,7 @@
 const { readFileAsync } = require('./fs.utils');
 const { authorize } = require('./google.client');
 const gmailService = require('./gmail.service');
+const emailService = require('./email.service');
 const settings = require('./settings');
 
 const googleConfig = settings.getGoogleConfig();
@@ -22,6 +23,7 @@ const main = () =>
 				})
 				.then(() => gmailService.getEmailsByLabel(auth, ['Label_9180442277909378761', 'Label_7306260070784252485']))
 				.then((messages) => Promise.all(messages.map((message) => gmailService.getEmail(auth, message.id))))
+				.then((messages) => Promise.all(messages.map((message) => emailService.parseEmail(message.payload.body))))
 				.then(messages => {
 					console.log(' # MESSAGES ');
 					messages.forEach((message => console.log(JSON.stringify(message))));

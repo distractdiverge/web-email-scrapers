@@ -1,3 +1,4 @@
+const R = require('ramda');
 const { readFileAsync } = require('./fs.utils');
 const { authorize } = require('./google.client');
 const gmailService = require('./gmail.service');
@@ -7,24 +8,19 @@ const settings = require('./settings');
 const googleConfig = settings.getGoogleConfig();
 const CREDENTIALS_PATH = googleConfig.credentials_path;
 
+const promiseMap = R.curry((func, array) => Promise.all(R.map(func, array)));
+
 const main = () =>
 	readFileAsync(CREDENTIALS_PATH)
 		.then(JSON.parse)
 		.then(authorize)
 		.then((auth) =>
 
-			gmailService.getLabels(auth)
-				.then((labels) => {
-					console.log(' # LABELS');
-					labels.forEach(label => {
-						console.log(JSON.stringify(label));
-					});
-					console.log('\n\n');
-				})
-                // TODO: Make labels configurable
-				.then(() => gmailService.getEmailsByLabel(auth, ['Label_9180442277909378761', 'Label_7306260070784252485']))
-				.then((messages) => Promise.all(messages.map((message) => gmailService.getEmail(auth, message.id))))
-				.then((messages) => Promise.all(messages.map((message) => emailService.parseEmail(message.payload.body))))
+            gmailService.getLabelsByNames(auth, ['Tadpoles', 'to-process'])
+                .then(R.map(R.prop('id')))
+				.then(gmailService.getEmailsByLabel(auth))
+				.then(promiseMap(message => gmailService.getEmail(auth, message.id)))
+				.then(promiseMap(message => emailService.parseEmail(message.payload.body)))
 				.then(messages => {
 					console.log(' # MESSAGES ');
 					messages.forEach((message => console.log(JSON.stringify(message))));

@@ -9,6 +9,12 @@ const readFileAsync = (path) => new Promise(
 		)
 );
 
+const writeFileAsync = (path, data) => new Promise(
+    (resolve, reject) =>
+        fs.writeFile(path, data, (err) => err ? reject(err) : resolve(path))
+)
+
 module.exports = {
 	readFileAsync,
+    writeFileAsync,
 };

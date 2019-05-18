@@ -3,6 +3,7 @@ const R = require('ramda');
 const cheerio = require('cheerio');
 const { simpleParser } = require('mailparser');
 
+
 const parseEmailHtml = (email) => {
     // TODO: Find a way to get a text-only summary of the email
 
@@ -16,9 +17,7 @@ const parseEmailHtml = (email) => {
     // TODO: Create list of links to change (to download links)
     const imgLinks = imgs
         .map((_, el) => $(el).attr('src'))
-        .toArray()
-        // TODO: Introduce Ramda for util functions
-        .map(url => url ? url.toLowerCase() : url);
+        .toArray();
 
     // Only get links that look like this: 'https://www.tadpoles.com/m/p/TKniTaKPmsp5ynEuKsSjbM?thumbnail=true&d=t&s=t'
     const validFormat = /https\:\/\/www\.tadpoles\.com\/m\/p\/\w+\?thumbnail=true&d=t&s=t.*/;
@@ -38,7 +37,7 @@ const modifyLinks = (urls) => {
         .map(urlLib.format);
 
     return Promise.resolve(result);
-}
+};
 
 const parseMimeEmail = (mimeEmailData) => {
     const encodedData = (new Buffer(mimeEmailData, 'base64')).toString('ascii');

@@ -28,6 +28,18 @@ const config = convict({
 			format: 'String',
 			env: 'GOOGLE_CREDENTIALS_PATH',
 		},
+        pubsub_topic_name: {
+		    desc: 'Full name of the cloud pubsub topic',
+            default: undefined,
+            format: 'String',
+            env: 'GMAIL_PUBSUB_TOPIC_NAME',
+        },
+        label_names: {
+		    desc: 'List of labels to include in the gmail watcher',
+            default: [],
+            format: 'Array',
+            env: 'GMAIL_LABELS',
+        },
 	},
 });
 

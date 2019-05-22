@@ -37,26 +37,39 @@ const getLabels = (auth) => new Promise(
 					.list({ userId: 'me' }, (err, res) => err ? reject(err) : resolve(res.data.labels))
 );
 
-const getEmailsByLabel = R.curry((auth, labelIds) => new Promise((resolve, reject) => {
-
-	const client = getGmailClient(auth);
+const getEmailsByLabel = R.curry((auth, labelIds) => new Promise((resolve, reject) =>
 
 	// TODO: Take in label names & match against list of labels
 
-	return client.users.messages.list(
+	getGmailClient(auth).users.messages.list(
 		{ userId: 'me', labelIds, },
 		(err, res) => err ? reject(err) : resolve(res.data.messages)
-	);
-}));
+	)
+));
 
-const getEmail = (auth, messageId) => new Promise((resolve, reject) => {
-	const client = getGmailClient(auth);
-
-	return client.users.messages.get(
+const getEmail = (auth, messageId) => new Promise((resolve, reject) =>
+	getGmailClient(auth).users.messages.get(
 		{ userId: 'me', id: messageId },
 		(err, res) => err ? reject(err) : resolve(res.data)
 	)
-});
+);
+
+// TODO: Grant pernmissions (to allow this call)
+// TODO: Replace this with RAW usage of 'gaxios' because the google API is broken! (its using url encoded, when it should be application/json)
+const registerGmailWatcher = R.curry((auth, topicName, labelIds) =>
+    new Promise((resolve, reject) =>
+        getGmailClient(auth)
+            .users
+            .watch(
+                {
+                    userId: 'me',
+                    topicName,
+                    labelIds,
+                },
+                (err, res) => err ? reject(err) : resolve(res)
+            )
+    )
+);
 
 module.exports = {
     findLabelByName,
@@ -66,4 +79,5 @@ module.exports = {
 	getLabels,
 	getEmailsByLabel,
 	getEmail,
+    registerGmailWatcher,
 };

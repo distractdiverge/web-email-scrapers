@@ -1,6 +1,5 @@
 const R = require('ramda');
-const { readFileAsync } = require('./fs.utils');
-const { authorize } = require('./google.client');
+const { authWithCredentialsFile } = require('./google.client');
 const downloadService = require('./download.service');
 const gmailService = require('./gmail.service');
 const emailService = require('./email.service');
@@ -12,9 +11,7 @@ const CREDENTIALS_PATH = googleConfig.credentials_path;
 const promiseMap = R.curry((func, array) => Promise.all(R.map(func, array)));
 
 const main = () =>
-	readFileAsync(CREDENTIALS_PATH)
-		.then(JSON.parse)
-		.then(authorize)
+	authWithCredentialsFile(CREDENTIALS_PATH)
 		.then((auth) =>
 
             gmailService.getLabelsByNames(auth, ['Tadpoles', 'to-process'])

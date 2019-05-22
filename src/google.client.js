@@ -1,38 +1,34 @@
 const { google } = require('googleapis');
 const readline = require('readline');
 const settings = require('./settings'); // TODO: Remove file dependence to argument of functions
-const fs = require('fs');
-const { readFileAsync } = require('./fs.utils');
+const { readFileAsync, writeFileAsync } = require('./fs.utils');
 
 const SCOPES = [
-	'https://www.googleapis.com/auth/gmail.readonly'
+	'https://www.googleapis.com/auth/gmail.readonly',           // Read GMail items
+    'https://www.googleapis.com/auth/photoslibrary.readonly',   // Read GPhoto items
 ];
 
 const googleConfig = settings.getGoogleConfig();
-
 const TOKEN_PATH = googleConfig.token_path;
 
-const fetchToken = (credentials) => {
-	const { client_secret, client_id, redirect_uris } = credentials.installed;
+const makeOAuthClient = (credentials) => {
+    const { client_secret, client_id, redirect_uris } = credentials.installed;
 
-	const oAuth2Client = new google.auth.OAuth2(
-		client_id, client_secret, redirect_uris[0]
-	);
-
-	return getNewToken(oAuth2Client);
+    return new google.auth.OAuth2(
+        client_id,
+        client_secret,
+        redirect_uris[0],
+    )
 };
 
 const authorize = (credentials) => {
-	const { client_secret, client_id, redirect_uris } = credentials.installed;
-
-	const oAuth2Client = new google.auth.OAuth2(
-		client_id, client_secret, redirect_uris[0]
-	);
+	const oAuth2Client = makeOAuthClient(credentials);
 
 	return readFileAsync(TOKEN_PATH)
 		.then(content => JSON.parse(content))
+        .catch(() => getNewToken(oAuth2Client))
 		.then(token => oAuth2Client.setCredentials(token))
-		.then(() => oAuth2Client);
+        .then(() => oAuth2Client);
 };
 
 
@@ -55,20 +51,30 @@ const getNewToken = (oAuth2Client) => new Promise((resolve, reject) => {
 				reject(err);
 			}
 
-			fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err) => {
-				if (err) {
-					console.error(err);
-					reject(err);
-				}
-				console.log('Token stored to', TOKEN_PATH);
-				resolve(token);
-			});
+			writeFileAsync(TOKEN_PATH, JSON.stringify(token))
+                .then(() => {
+                    console.log('Token stored to', TOKEN_PATH);
+                    resolve(token);
+                })
+                .catch((err) => {
+                    console.error(err);
+                    reject(err);
+                });
 		});
 	});
 });
 
+const readCredentials = (credentialsFilePath) =>
+    readFileAsync(credentialsFilePath)
+        .then(JSON.parse);
+
+const authWithCredentialsFile = (filepath) =>
+    readCredentials(filepath)
+        .then(authorize);
+
 module.exports = {
-	authorize,
-	fetchToken,
+	readCredentials,
+    authorize,
+    authWithCredentialsFile,
 	getNewToken,
 };

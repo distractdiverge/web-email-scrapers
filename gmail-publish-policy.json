@@ -1,0 +1,11 @@
+{
+  "etag": "ACAB=",
+  "bindings": [
+    {
+      "role": "roles/pubsub.publisher",
+      "members": [
+        "serviceAccount:gmail-api-push@system.gserviceaccount.com"
+      ]
+    }
+  ]
+}

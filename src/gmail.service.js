@@ -55,16 +55,18 @@ const getEmail = (auth, messageId) => new Promise((resolve, reject) =>
 );
 
 // TODO: Grant pernmissions (to allow this call)
-// TODO: Replace this with RAW usage of 'gaxios' because the google API is broken! (its using url encoded, when it should be application/json)
 const registerGmailWatcher = R.curry((auth, topicName, labelIds) =>
     new Promise((resolve, reject) =>
         getGmailClient(auth)
             .users
             .watch(
                 {
+                    auth,
                     userId: 'me',
-                    topicName,
-                    labelIds,
+                    resource: {
+                        topicName,
+                        labelIds,
+                    }
                 },
                 (err, res) => err ? reject(err) : resolve(res)
             )

@@ -1,0 +1,33 @@
+{
+  "name": "gmail-tadpoles-parser",
+  "version": "1.0.0",
+  "description": "A simple gmail parser of emails sent from tadpoles.",
+  "main": "src/index.js",
+  "scripts": {
+    "generate:token": "node src/generate-token.js",
+    "start": "node src/index.js",
+    "test": "echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1"
+  },
+  "keywords": [
+    "gmail",
+    "tadpoles",
+    "google-apis"
+  ],
+  "author": "Alex Lapinski <contact@alexlapinski.name>",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.1",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "convict": "^5.0.0",
+    "dotenv": "^8.0.0",
+    "googleapis": "^27.0.0",
+    "grpc": "^1.20.3",
+    "mailparser": "^2.7.1",
+    "ramda": "^0.26.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "safe-buffer": "^5.1.2",
+    "uuid": "^3.3.2"
+  }
+}

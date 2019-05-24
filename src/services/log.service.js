@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+const chalk = require('chalk/types');
 
 const logInfo = (message) => {
     console.log(`${chalk.blue.bold('[info]')}: ${message}`);

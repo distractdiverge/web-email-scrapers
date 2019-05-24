@@ -1,7 +1,7 @@
 const R = require('ramda');
-const { authWithCredentialsFile } = require('./google.client');
-const photosService = require('./gphotos.client');
-const settings = require('./settings');
+const { authWithCredentialsFile } = require('./services/google.client');
+const photosService = require('./services/gphotos.service');
+const settings = require('./utilities/settings');
 
 const googleConfig = settings.getGoogleConfig();
 const CREDENTIALS_PATH = googleConfig.credentials_path;

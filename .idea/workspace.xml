@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4eb5db1-a59a-4d91-a408-831cca3708e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gmail-publish-policy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish-permissions.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nvmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cloud.handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Get_Token.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Get_Token.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmail-publish-policy.json" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/gmail-publish-policy.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish-permissions.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/publish-permissions.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/download.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/download.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fs.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/fs.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generate-token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generate-token.main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gmail.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/gmail.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/google.client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/google.client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/batch.main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/log.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/photos.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/photos.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/register-pubsub.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/register-pubsub.main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/settings.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,81 +33,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/register-pubsub.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gmail.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-              <folding>
-                <marker date="1558577470824" expanded="false" signature="176:381" ph="..." />
-                <marker date="1558577470824" expanded="false" signature="429:488" ph="..." />
-                <marker date="1558577470824" expanded="false" signature="536:716" ph="..." />
-                <marker date="1558577470824" expanded="false" signature="746:922" ph="..." />
-                <marker date="1558577470824" expanded="true" signature="977:1216" ph="..." />
-                <marker date="1558577470824" expanded="true" signature="1256:1425" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/publish-permissions.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/cloud.handler.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmail-publish-policy.json">
+        <entry file="file://$PROJECT_DIR$/.nvmrc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/settings.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="34" column="41" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/google.client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -124,7 +73,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/generate-token.js" />
         <option value="$PROJECT_DIR$/src/image.service.js" />
         <option value="$PROJECT_DIR$/src/log.service.js" />
         <option value="$PROJECT_DIR$/src/email.service.js" />
@@ -135,7 +83,6 @@
         <option value="$PROJECT_DIR$/src/google.client.js" />
         <option value="$PROJECT_DIR$/src/gphotos.service.js" />
         <option value="$PROJECT_DIR$/src/gphotos.client/http.proto" />
-        <option value="$PROJECT_DIR$/src/photos.test.js" />
         <option value="$PROJECT_DIR$/src/gphotos.client/index.js" />
         <option value="$PROJECT_DIR$/src/settings.js" />
         <option value="$PROJECT_DIR$/src/register-pubsub.js" />
@@ -145,12 +92,17 @@
         <option value="$PROJECT_DIR$/src/gmail.service.js" />
         <option value="$PROJECT_DIR$/publish-permissions.sh" />
         <option value="$PROJECT_DIR$/gmail-publish-policy.json" />
+        <option value="$PROJECT_DIR$/src/services/google.client.js" />
+        <option value="$PROJECT_DIR$/src/generate-token.js" />
+        <option value="$PROJECT_DIR$/src/photos.test.js" />
+        <option value="$PROJECT_DIR$/src/cloud.handler.js" />
+        <option value="$PROJECT_DIR$/.nvmrc" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="252" />
+    <option name="x" value="26" />
+    <option name="y" value="23" />
     <option name="width" value="1393" />
     <option name="height" value="877" />
   </component>
@@ -195,6 +147,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$/src/utilities" />
+      <recent name="$PROJECT_DIR$/src/services" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -208,7 +167,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.Register Watcher">
-    <configuration name="Register Watcher" type="NodeJSConfigurationType" path-to-js-file="src/register-pubsub.js" working-dir="$PROJECT_DIR$">
+    <configuration name="Register Watcher" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/src/register-pubsub.main.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="testbench" type="NodeJSConfigurationType" path-to-js-file="src/photos.test.js" working-dir="$PROJECT_DIR$">
@@ -241,7 +200,7 @@
     <option name="totallyTimeSpent" value="14812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="252" width="1393" height="877" extended-state="0" />
+    <frame x="26" y="23" width="1393" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -273,22 +232,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/google.client.js</url>
+          <url>file://$PROJECT_DIR$/src/services/google.client.js</url>
           <line>47</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/google.client.js</url>
+          <url>file://$PROJECT_DIR$/src/services/google.client.js</url>
           <line>48</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/google.client.js</url>
+          <url>file://$PROJECT_DIR$/src/services/google.client.js</url>
           <line>62</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/download.service.js</url>
+          <url>file://$PROJECT_DIR$/src/services/download.service.js</url>
           <line>21</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -298,7 +257,7 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/google.client.js</url>
+          <url>file://$PROJECT_DIR$/src/services/google.client.js</url>
           <line>54</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
@@ -333,43 +292,43 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/register-pubsub.js</url>
+          <url>file://$PROJECT_DIR$/src/register-pubsub.main.js</url>
           <line>22</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/register-pubsub.js</url>
+          <url>file://$PROJECT_DIR$/src/register-pubsub.main.js</url>
           <line>17</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/register-pubsub.js</url>
+          <url>file://$PROJECT_DIR$/src/register-pubsub.main.js</url>
           <line>13</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/register-pubsub.js</url>
+          <url>file://$PROJECT_DIR$/src/register-pubsub.main.js</url>
           <line>15</line>
           <properties lambdaOrdinal="0" />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/gmail.service.js</url>
+          <url>file://$PROJECT_DIR$/src/services/gmail.service.js</url>
           <line>70</line>
           <properties lambdaOrdinal="0" />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/gmail.service.js</url>
+          <url>file://$PROJECT_DIR$/src/services/gmail.service.js</url>
           <line>58</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/gmail.service.js</url>
+          <url>file://$PROJECT_DIR$/src/services/gmail.service.js</url>
           <line>62</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="60" />
@@ -508,22 +467,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/generate-token.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out_0b206cb9-3421-46c1-a568-1c671574aae8.png" />
-    <entry file="file://$PROJECT_DIR$/src/download.service.js">
+    <entry file="file://$PROJECT_DIR$/src/services/download.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/email.service.js">
+    <entry file="file://$PROJECT_DIR$/src/services/email.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
@@ -531,7 +483,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gphotos.service.js" />
-    <entry file="file://$PROJECT_DIR$/src/fs.utils.js">
+    <entry file="file://$PROJECT_DIR$/src/utilities/fs.utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
@@ -542,13 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
           <caret line="375" column="1" selection-start-line="375" selection-start-column="1" selection-end-line="375" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/photos.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -573,24 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/log.service.js">
+    <entry file="file://$PROJECT_DIR$/src/services/log.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/google.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -598,13 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -636,28 +560,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/register-pubsub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ARCHITECTURE.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="409">
             <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="301">
-            <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           </first_editor>
           <second_editor />
         </state>
@@ -677,18 +584,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gmail.service.js">
+    <entry file="file://$PROJECT_DIR$/scripts/gmail-publish-policy.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-          <folding>
-            <marker date="1558577470824" expanded="false" signature="176:381" ph="..." />
-            <marker date="1558577470824" expanded="false" signature="429:488" ph="..." />
-            <marker date="1558577470824" expanded="false" signature="536:716" ph="..." />
-            <marker date="1558577470824" expanded="false" signature="746:922" ph="..." />
-            <marker date="1558577470824" expanded="true" signature="977:1216" ph="..." />
-            <marker date="1558577470824" expanded="true" signature="1256:1425" ph="..." />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/publish-permissions.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -699,17 +605,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/publish-permissions.sh">
+    <entry file="file://$PROJECT_DIR$/src/services/gmail.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        <state relative-caret-position="457">
+          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+          <folding>
+            <marker date="1558663766135" expanded="false" signature="192:397" ph="..." />
+            <marker date="1558663766135" expanded="false" signature="445:504" ph="..." />
+            <marker date="1558663766135" expanded="false" signature="552:732" ph="..." />
+            <marker date="1558663766135" expanded="false" signature="762:938" ph="..." />
+            <marker date="1558663766135" expanded="true" signature="993:1232" ph="..." />
+            <marker date="1558663766135" expanded="true" signature="1272:1441" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmail-publish-policy.json">
+    <entry file="file://$PROJECT_DIR$/src/register-pubsub.main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="141">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/google.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="151">
+            <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/photos.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/batch.main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generate-token.main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cloud.handler.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nvmrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>

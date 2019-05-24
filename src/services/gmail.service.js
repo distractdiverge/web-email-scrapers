@@ -1,4 +1,4 @@
-const { google } = require('googleapis');
+const { google } = require('googleapis/build/src/index');
 const R = require('ramda');
 
 const getGmailClient = (auth) => google.gmail({ version: 'v1', auth });

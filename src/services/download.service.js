@@ -1,7 +1,7 @@
 const R = require('ramda');
 const request = require('request-promise-native');
 const { logError } = require('./log.service');
-const { writeFileAsync } = require('./fs.utils');
+const { writeFileAsync } = require('../utilities/fs.utils');
 const uuid = require('uuid');
 
 const downloadFiles = (urls) => {

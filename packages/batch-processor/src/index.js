@@ -1,9 +1,9 @@
 const R = require('ramda');
-const { authWithCredentialsFile } = require('./services/google.client');
-const downloadService = require('./services/download.service');
-const gmailService = require('./services/gmail.service');
-const emailService = require('./services/email.service');
-const settings = require('./utilities/settings');
+const { authWithCredentialsFile } = require('../../core/src/services/google.client');
+const downloadService = require('../../email-parser/src/download.service');
+const gmailService = require('../../core/src/services/gmail.service');
+const emailService = require('../../email-parser/src/email.service');
+const settings = require('../../core/src/settings');
 
 const googleConfig = settings.getGoogleConfig();
 const CREDENTIALS_PATH = googleConfig.credentials_path;

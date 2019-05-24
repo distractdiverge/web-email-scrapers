@@ -1,6 +1,6 @@
-const { readFileAsync } = require('./utilities/fs.utils');
+const { readFileAsync } = require('./fs.utils');
 const { fetchToken } = require('./services/google.client');
-const settings = require('./utilities/settings');
+const settings = require('./settings');
 
 const googleConfig = settings.getGoogleConfig();
 const CREDENTIALS_PATH = googleConfig.credentials_path;

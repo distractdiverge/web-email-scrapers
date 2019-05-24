@@ -2,10 +2,10 @@
   "name": "gmail-tadpoles-parser",
   "version": "1.0.0",
   "description": "A simple gmail parser of emails sent from tadpoles.",
-  "main": "src/index.js",
+  "main": "../pubsub-listener/src/index.js",
   "scripts": {
     "generate:token": "node src/generate-token.js",
-    "start": "node src/index.js",
+    "start": "node ../pubsub-listener/src/index.js",
     "test": "echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1"
   },
   "keywords": [

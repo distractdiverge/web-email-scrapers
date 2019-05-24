@@ -1,7 +1,7 @@
 const { google } = require('googleapis/build/src/index');
 const readline = require('readline');
-const settings = require('../utilities/settings'); // TODO: Remove file dependence to argument of functions
-const { readFileAsync, writeFileAsync } = require('../utilities/fs.utils');
+const settings = require('../settings'); // TODO: Remove file dependence to argument of functions
+const { readFileAsync, writeFileAsync } = require('../fs.utils');
 
 const SCOPES = [
 	'https://www.googleapis.com/auth/gmail.readonly',           // Read GMail items

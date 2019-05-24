@@ -1,7 +1,7 @@
 const R = require('ramda');
-const { authWithCredentialsFile } = require('./services/google.client');
-const gmailService = require('./services/gmail.service');
-const settings = require('./utilities/settings');
+const { authWithCredentialsFile } = require('../../core/src/services/google.client');
+const gmailService = require('../../core/src/services/gmail.service');
+const settings = require('../../core/src/settings');
 
 const getCredentialsPathFromSettings = R.prop('credentials_path');
 const getTopicFromSettings = R.prop('pubsub_topic_name');

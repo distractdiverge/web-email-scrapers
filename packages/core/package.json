@@ -1,12 +1,12 @@
 {
-  "name": "batch",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "gmail-parser.core",
+  "version": "0.1.0",
+  "description": "A set of core utilities for parsing gmail messages.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate:token": "node src/generate-token.js",
+    "test": "jest"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Alex Lapinski <contact@alexlapinski.name>",
+  "license": "MIT"
 }

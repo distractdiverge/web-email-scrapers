@@ -3,5 +3,12 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.14.1"
+  },
+  "dependencies": {
+    "gmail-parser.batch": "file:packages/batch-processor",
+    "gmail-parser.cloud-function": "file:packages/pubsub-listener",
+    "gmail-parser.core": "file:packages/core",
+    "gmail-parser.email-parser": "file:packages/email-parser",
+    "gmail-parser.watcher": "file:packages/watcher"
   }
 }

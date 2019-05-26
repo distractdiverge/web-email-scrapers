@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Get Token" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/packages/core/src/generate-token.main.js" working-dir="$PROJECT_DIR$">
+  <configuration default="false" name="Get Token" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/packages/gmail-parser.core/src/generate-token.main.js" working-dir="$PROJECT_DIR$">
     <method v="2" />
   </configuration>
 </component>

@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "Alex Lapinski <contact@alexlapinski.name>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gmail-parser.core": "^0.1.0",
+    "gmail-parser.email-parser": "^0.1.0"
+  }
 }

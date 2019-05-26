@@ -8,5 +8,7 @@
   },
   "keywords": [],
   "author": "Alex Lapinski <contact@alexlapinski.name>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+  }
 }

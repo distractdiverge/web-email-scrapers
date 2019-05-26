@@ -1,7 +1,7 @@
 const R = require('ramda');
 const request = require('request-promise-native');
-const { logError } = require('../../core/src/services/log.service');
-const { writeFileAsync } = require('../../core/src/fs.utils');
+const { logError } = require('gmail-parser.core/log.service');
+const { writeFileAsync } = require('gmail-parser.core/fs.utils');
 const uuid = require('uuid');
 
 const downloadFiles = (urls) => {

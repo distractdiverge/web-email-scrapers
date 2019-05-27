@@ -3,7 +3,7 @@ const { authWithCredentialsFile } = require('gmail-parser.core/services/google.c
 const downloadService = require('gmail-parser.email-parser/download.service');
 const gmailService = require('gmail-parser.core/services/gmail.service');
 const emailService = require('gmail-parser.email-parser/email.service');
-const settings = require('gmail-parser.core/settings');
+const settings = require('packages/gmail-parser.batch/settings');
 
 const googleConfig = settings.getGoogleConfig();
 const CREDENTIALS_PATH = googleConfig.credentials_path;

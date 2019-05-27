@@ -1,15 +1,12 @@
-const { google } = require('googleapis/build/src/index');
+const R = require('ramda');
+const { google } = require('googleapis');
 const readline = require('readline');
-const settings = require('../settings'); // TODO: Remove file dependence to argument of functions
 const { readFileAsync, writeFileAsync } = require('../fs.utils');
 
 const SCOPES = [
 	'https://www.googleapis.com/auth/gmail.readonly',           // Read GMail items
     'https://www.googleapis.com/auth/photoslibrary.readonly',   // Read GPhoto items
 ];
-
-const googleConfig = settings.getGoogleConfig();
-const TOKEN_PATH = googleConfig.token_path;
 
 const makeOAuthClient = (credentials) => {
     const { client_secret, client_id, redirect_uris } = credentials.installed;
@@ -31,38 +28,39 @@ const authorize = (credentials) => {
         .then(() => oAuth2Client);
 };
 
+const getNewToken = R.curry(
+    (tokenPath, oAuth2Client) => new Promise((resolve, reject) => {
+	    const authUrl = oAuth2Client.generateAuthUrl({
+		    access_type: 'offline',
+		    scope: SCOPES,
+	    });
 
-const getNewToken = (oAuth2Client) => new Promise((resolve, reject) => {
-	const authUrl = oAuth2Client.generateAuthUrl({
-		access_type: 'offline',
-		scope: SCOPES,
-	});
-
-	console.log('Authorize this app by visiting this url: ', authUrl);
-	const rl = readline.createInterface({
-		input: process.stdin,
-		output: process.stdout,
-	});
-	rl.question('Enter the code from that page here: ', (code) => {
-		rl.close();
-		oAuth2Client.getToken(code, (err, token) => {
-			if (err) {
-				console.error('Error retrieving access token', err);
-				reject(err);
-			}
-
-			writeFileAsync(TOKEN_PATH, JSON.stringify(token))
-                .then(() => {
-                    console.log('Token stored to', TOKEN_PATH);
-                    resolve(token);
-                })
-                .catch((err) => {
-                    console.error(err);
+        console.log('Authorize this app by visiting this url: ', authUrl);
+        const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout,
+        });
+        rl.question('Enter the code from that page here: ', (code) => {
+            rl.close();
+            oAuth2Client.getToken(code, (err, token) => {
+                if (err) {
+                    console.error('Error retrieving access token', err);
                     reject(err);
-                });
-		});
-	});
-});
+                }
+
+                writeFileAsync(tokenPath, JSON.stringify(token))
+                    .then(() => {
+                        console.log('Token stored to', TOKEN_PATH);
+                        resolve(token);
+                    })
+                    .catch((err) => {
+                        console.error(err);
+                        reject(err);
+                    });
+            });
+        });
+    })
+);
 
 const readCredentials = (credentialsFilePath) =>
     readFileAsync(credentialsFilePath)

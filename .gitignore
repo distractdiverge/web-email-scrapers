@@ -1,6 +1,6 @@
 ## .env files
-packages/gmail-parser.email-parser/.env
-packages/gmail-parser.email-parser/.env
+packages/gmail-parser.batch/.env
+packages/gmail-parser.batch/.env
 !.env.sample
 
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
@@ -98,7 +98,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-packages/gmail-parser.email-parser/.env
+packages/gmail-parser.batch/.env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)

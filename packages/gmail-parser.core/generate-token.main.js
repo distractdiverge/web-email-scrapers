@@ -1,18 +1,30 @@
+const R = require('ramda');
 const { readFileAsync } = require('./fs.utils');
-const { fetchToken } = require('./services/google.client');
+const { getNewToken } = require('./services/google.client');
 const settings = require('./settings');
 
-const googleConfig = settings.getGoogleConfig();
-const CREDENTIALS_PATH = googleConfig.credentials_path;
+const getCredentialsPath = R.prop('credentials_path');
+const getTokenPath = R.prop('token_path');
 
-const main = () =>
-    readFileAsync(CREDENTIALS_PATH)
+const main = (config) =>
+    readFileAsync(getCredentialsPath(config))
         .then(JSON.parse)
-        .then(fetchToken)
+        .then(getNewToken(getTokenPath(config)))
         .catch(err => console.log('Error loading client secret file:', err));
 
 
 if (require.main === module) {
-    main()
+    const config = settings.getGoogleConfig();
+    main(config)
         .then(() => process.exit())
+        .catch(err => {
+            console.error(err);
+            process.exit(1);
+        });
 }
+
+module.exports = {
+  getCredentialsPath,
+  getTokenPath,
+  main,
+};

@@ -1,7 +1,7 @@
 const R = require('ramda');
-const { authWithCredentialsFile } = require('../../gmail-parser.core/src/services/google.client');
-const photosService = require('../../gmail-parser.core/src/services/gphotos.service');
-const settings = require('../../gmail-parser.core/src/settings');
+const { authWithCredentialsFile } = require('../gmail-parser.core/services/google.client');
+const photosService = require('../../gmail-parser.core/services/gphotos.service');
+const settings = require('../gmail-parser.core/settings');
 
 const googleConfig = settings.getGoogleConfig();
 const CREDENTIALS_PATH = googleConfig.credentials_path;

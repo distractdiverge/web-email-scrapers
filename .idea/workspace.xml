@@ -2,39 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4eb5db1-a59a-4d91-a408-831cca3708e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Main__Batch_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Get_Token.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Get_Token.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lerna.json" beforeDir="false" afterPath="$PROJECT_DIR$/lerna.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/batch-processor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.batch/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/batch-processor/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.batch/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/fs.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/src/fs.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/generate-token.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/src/generate-token.main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/gphotos.client/http.proto" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/http.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/gphotos.client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/services/gmail.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/src/services/gmail.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/services/google.client.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/src/services/google.client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/services/log.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/src/services/log.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/src/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/test/fs.utils.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/test/fs.utils.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/test/generate-token.main.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/test/generate-token.main.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/test/services/gmail.service.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/test/services/gmail.service.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/test/services/google.client.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/test/services/google.client.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/test/services/log.service.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/test/services/log.service.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/test/settings.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/test/settings.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/email-parser/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/email-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/email-parser/src/download.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/src/download.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/email-parser/src/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/src/email.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/email-parser/src/photos.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/src/photos.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/pubsub-listener/.gcloudignore" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.cloud-function/.gcloudignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/pubsub-listener/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.cloud-function/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/pubsub-listener/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.cloud-function/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/watcher/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.watcher/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/watcher/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.batch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.batch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.batch/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.batch/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.cloud-function/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.cloud-function/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.cloud-function/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.cloud-function/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/src/fs.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/fs.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/src/generate-token.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/generate-token.main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/http.proto" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/gphotos.client/http.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/gphotos.client/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/src/services/gmail.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/services/gmail.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/src/services/google.client.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/services/google.client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/src/services/log.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/services/log.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.core/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.core/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.email-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.email-parser/src/download.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/download.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.email-parser/src/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/email.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.email-parser/src/photos.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.email-parser/photos.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.watcher/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.watcher/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gmail-parser.watcher/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,29 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/gmail-parser.batch/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/src/download.service.js">
+        <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+            <state relative-caret-position="240">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -142,6 +114,11 @@
         <option value="$PROJECT_DIR$/packages/batch-processor/package.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/packages/gmail-parser.email-parser/src/download.service.js" />
+        <option value="$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js" />
+        <option value="$PROJECT_DIR$/packages/gmail-parser.batch/src/index.js" />
+        <option value="$PROJECT_DIR$/packages/gmail-parser.email-parser/package.json" />
+        <option value="$PROJECT_DIR$/packages/gmail-parser.batch/package.json" />
+        <option value="$PROJECT_DIR$/packages/gmail-parser.core/package.json" />
       </list>
     </option>
   </component>
@@ -149,7 +126,7 @@
     <option name="x" value="30" />
     <option name="y" value="23" />
     <option name="width" value="1393" />
-    <option name="height" value="477" />
+    <option name="height" value="763" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -172,7 +149,25 @@
               <item name="gmail-tadpoles-parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="gmail-tadpoles-parser" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="gmail-parser.watcher" type="462c0819:PsiDirectoryNode" />
+              <item name="gmail-parser.batch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmail-tadpoles-parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmail-tadpoles-parser" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="gmail-parser.cloud-function" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmail-tadpoles-parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmail-tadpoles-parser" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="gmail-parser.core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmail-tadpoles-parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmail-tadpoles-parser" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="gmail-parser.email-parser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -204,11 +199,11 @@
       <recent name="$PROJECT_DIR$/packages/watcher" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/packages/email-parser/src" />
-      <recent name="$PROJECT_DIR$/packages/watcher/src" />
-      <recent name="$PROJECT_DIR$/packages/core/src" />
-      <recent name="$PROJECT_DIR$/packages/pubsub-listener/src" />
-      <recent name="$PROJECT_DIR$/packages/batch-processor/src" />
+      <recent name="$PROJECT_DIR$/packages/gmail-parser.batch" />
+      <recent name="$PROJECT_DIR$/packages/gmail-parser.cloud-function" />
+      <recent name="$PROJECT_DIR$/packages/gmail-parser.watcher" />
+      <recent name="$PROJECT_DIR$/packages/gmail-parser.email-parser" />
+      <recent name="$PROJECT_DIR$/packages/gmail-parser.core" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -223,15 +218,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Register Watcher">
-    <configuration name="Register Watcher" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.Main (Batch)">
+    <configuration name="Register Watcher" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/packages/gmail-parser.watcher/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="testbench" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/packages/gmail-parser.email-parser/src/photos.test.js" working-dir="$PROJECT_DIR$">
+    <configuration name="testbench" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/packages/gmail-parser.email-parser/photos.test.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.Main" />
+      <item itemvalue="Node.js.Main (Batch)" />
       <item itemvalue="Node.js.testbench" />
       <item itemvalue="Node.js.Register Watcher" />
       <item itemvalue="Node.js.Get Token" />
@@ -257,10 +252,9 @@
     <option name="totallyTimeSpent" value="14812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="23" width="1393" height="477" extended-state="0" />
-    <editor active="true" />
+    <frame x="30" y="23" width="1393" height="763" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -268,14 +262,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22950819" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Bucklescript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2624204" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26229507" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -289,103 +283,103 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/google.client.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/services/google.client.js</url>
           <line>47</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/google.client.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/services/google.client.js</url>
           <line>48</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/google.client.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/services/google.client.js</url>
           <line>62</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.email-parser/src/download.service.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.email-parser/download.service.js</url>
           <line>21</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.email-parser/src/photos.test.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.email-parser/photos.test.js</url>
           <line>12</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/google.client.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/services/google.client.js</url>
           <line>54</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/index.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/gphotos.client/index.js</url>
           <line>8</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.email-parser/src/photos.test.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.email-parser/photos.test.js</url>
           <line>10</line>
           <properties lambdaOrdinal="0" />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/index.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/gphotos.client/index.js</url>
           <line>23</line>
           <properties lambdaOrdinal="0" />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/index.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/gphotos.client/index.js</url>
           <line>17</line>
           <properties lambdaOrdinal="0" />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/index.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/gphotos.client/index.js</url>
           <line>18</line>
           <properties lambdaOrdinal="0" />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.watcher/index.js</url>
           <line>22</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.watcher/index.js</url>
           <line>17</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.watcher/index.js</url>
           <line>13</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.watcher/index.js</url>
           <line>15</line>
           <properties lambdaOrdinal="0" />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/gmail.service.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/services/gmail.service.js</url>
           <line>70</line>
           <properties lambdaOrdinal="0" />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/gmail.service.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/services/gmail.service.js</url>
           <line>58</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/gmail.service.js</url>
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.core/services/gmail.service.js</url>
           <line>62</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="60" />
@@ -395,6 +389,12 @@
           <line>191</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/gmail-parser.batch/index.js</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -526,14 +526,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out_0b206cb9-3421-46c1-a568-1c671574aae8.png" />
     <entry file="file://$PROJECT_DIR$/src/gphotos.service.js" />
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/src/fs.utils.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/fs.utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/http.proto">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/gphotos.client/http.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
           <caret line="375" column="1" selection-start-line="375" selection-start-column="1" selection-end-line="375" selection-end-column="1" />
@@ -554,14 +554,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/src/gphotos.client/index.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/gphotos.client/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/log.service.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/services/log.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
@@ -624,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/gmail.service.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/services/gmail.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
@@ -639,7 +639,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/src/services/google.client.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/services/google.client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
@@ -681,38 +681,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.batch/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.cloud-function/src/index.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.cloud-function/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/src/photos.test.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/photos.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/src/generate-token.main.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/generate-token.main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.watcher/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -755,7 +741,7 @@
     <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/test/fs.utils.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/src/settings.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/settings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
@@ -764,20 +750,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/test/settings.test.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.watcher/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lerna.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -793,6 +765,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/email.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/download.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.watcher/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-491">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.watcher/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.batch/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/gmail-parser.cloud-function/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -800,31 +807,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.batch/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/src/email.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.email-parser/src/download.service.js">
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.batch/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        <state relative-caret-position="15">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/gmail-parser.core/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>

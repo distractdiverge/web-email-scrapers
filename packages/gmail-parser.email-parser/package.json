@@ -17,6 +17,8 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "gmail-parser.core": "^0.1.0-alpha.0",
+    "http-methods-enum": "^0.1.1",
+    "http-status-codes": "^1.3.2",
     "mailparser": "^2.7.1",
     "ramda": "^0.26.1"
   }

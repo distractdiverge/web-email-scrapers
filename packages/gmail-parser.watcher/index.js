@@ -1,23 +1,22 @@
 const R = require('ramda');
 const { authWithCredentialsFile } = require('gmail-parser.core/services/google.client');
 const gmailService = require('gmail-parser.core/services/gmail.service');
-const settings = require('packages/gmail-parser.batch/settings');
+const settings = require('./settings');
 
 const getCredentialsPathFromSettings = R.prop('credentials_path');
 const getTopicFromSettings = R.prop('pubsub_topic_name');
 const getLabelsFromSettings = R.prop('label_names');
 
 const register = R.curry(
-    (labelNames, pubsubTopic, auth) => {
-
+    (labelNames, pubsubTopic, auth) =>
         // Get Label Ids
-        return gmailService.getLabelsByNames(auth, labelNames)
+        gmailService.getLabelsByNames(auth, labelNames)
             .then(R.map(R.prop('id')))
             .then(labelIds => gmailService.registerGmailWatcher(auth, pubsubTopic, labelIds))
             .then(res => {
                 console.log(res);
             })
-});
+);
 
 const main = (settings) =>
     authWithCredentialsFile(getCredentialsPathFromSettings(settings))
@@ -40,4 +39,7 @@ if (require.main === module) {
 module.exports = {
     main,
     register,
+    getCredentialsPathFromSettings,
+    getTopicFromSettings,
+    getLabelsFromSettings,
 };

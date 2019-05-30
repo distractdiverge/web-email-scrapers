@@ -10,6 +10,9 @@
   "author": "Alex Lapinski <contact@alexlapinski.name>",
   "license": "MIT",
   "dependencies": {
-    "gmail-parser.core": "^0.1.0-alpha.0"
+    "convict": "^5.0.0",
+    "dotenv": "^8.0.0",
+    "gmail-parser.core": "^0.1.0-alpha.0",
+    "ramda": "^0.26.1"
   }
 }

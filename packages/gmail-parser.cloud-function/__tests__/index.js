@@ -3,6 +3,7 @@ const {
     decodeFromBase64,
     subscribe,
 } = require('../index');
+const fastCheck = require('fast-check');
 
 describe('Cloud Function Entrypoint', () => {
 
@@ -43,9 +44,19 @@ describe('Cloud Function Entrypoint', () => {
 
         describe('when given valid base64 input', () => {
             it('should return the decoded input', () => {
-                const input = Buffer('aValue').toString('base64');
-                const output = decodeFromBase64(input);
-                expect(output).toBe('aValue');
+                //const input = Buffer('aValue').toString('base64');
+                //const output = decodeFromBase64(input);
+                //expect(output).toBe('aValue');
+
+                fastCheck.assert(
+                    fastCheck.property(
+                        fastCheck.string(),
+                        (input) => {
+                            const encodedInput = Buffer.from(input).toString('base64');
+                            expect(decodeFromBase64(encodedInput)).toBe(input);
+                        }
+                    )
+                );
             });
         });
     });

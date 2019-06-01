@@ -2,7 +2,7 @@ const R = require('ramda');
 const { Buffer } = require('safe-buffer');
 
 const getMessageData = R.prop('data');
-const decodeFromBase64 = input => input
+const decodeFromBase64 = input => input != undefined && input != null
     ? Buffer.from(input, 'base64').toString()
     : undefined;
 

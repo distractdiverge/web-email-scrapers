@@ -10,6 +10,12 @@ const config = convict({
             format: 'String',
             env: 'GOOGLE_CREDENTIALS_PATH',
         },
+        token_path: {
+            desc: 'Path to an Service Credentials',
+            default: './token.json',
+            format: 'String',
+            env: 'GOOGLE_TOKEN_PATH',
+        },
     },
     parser: {
         label_names: {

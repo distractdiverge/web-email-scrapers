@@ -37,7 +37,7 @@ const getLabels = (auth) => new Promise(
 					.list({ userId: 'me' }, (err, res) => err ? reject(err) : resolve(res.data.labels))
 );
 
-const getEmailsByLabel = R.curry((auth, labelIds) => new Promise((resolve, reject) =>
+const getEmailsByLabelIds = R.curry((auth, labelIds) => new Promise((resolve, reject) =>
 
 	// TODO: Take in label names & match against list of labels
 
@@ -79,7 +79,7 @@ module.exports = {
     getLabelsByNames,
 	getGmailClient,
 	getLabels,
-	getEmailsByLabel,
+	getEmailsByLabelIds,
 	getEmail,
     registerGmailWatcher,
 };

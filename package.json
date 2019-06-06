@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "batch": "node ./packages/gmail-parser.batch/index.js",
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test"
   },

@@ -1,6 +1,5 @@
-## .env files
-packages/gmail-parser.batch/.env
-packages/gmail-parser.batch/.env
+## .env files.env
+.env
 !.env.sample
 
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig

@@ -46,9 +46,20 @@ const parseMimeEmail = (mimeEmailData) => {
     return simpleParser(data);
 };
 
-const parseEmail = (email) => {
+const getMessageBody = R.path(['payload', 'body']);
+
+const isMessagMultipart = (message) =>
+    R.path(['payload', 'mimeType'], message) === 'multipart/alternative';
+
+const extractLinksFromEmail = (email) =>
+    isMessagMultipart(email)
+        ? parseMultipartEmail(email)
+        : parseSinlepartEmail(getMessageBody(email));
+
+
+const parseSinlepartEmail = (email) => {
     if (email.size === 0) {
-        return Promise.resolve(undefined);
+        return Promise.resolve([]);
     }
     return parseMimeEmail(email.data)
         .then(parseEmailHtml)
@@ -56,8 +67,16 @@ const parseEmail = (email) => {
         .catch(err => console.error(err));
 };
 
+const parseMultipartEmail = (email) => {
+    // TODO: Completely implement this method to handle single part & multipart emails
+
+    // Here; we want the HTML part of the email; not the plain text part
+
+    return email;
+};
+
 module.exports = {
     parseMimeEmail,
     parseEmailHtml,
-    parseEmail,
+    extractLinksFromEmail,
 };

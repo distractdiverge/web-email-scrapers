@@ -1,6 +1,7 @@
-# Google Mail Parser
-Parse specifc emails when they come into gmail.
+# Web and Email Parser / Scrapers
+A collection of node packages to parse email messages, and scrape websites. After parsing, the information is stored within Google drive.
 
+## Gmail Parser
 Extract the images from these emails, and store them in google drive.
 
 ## Required Tools

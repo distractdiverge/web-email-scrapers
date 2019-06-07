@@ -3,16 +3,13 @@ jobs:
   build:
     working_directory: ~/web-email-scrapers
     docker:
-      - image: circleci/node:4.8.2
+      - image: circleci/node:latest
     steps:
       - checkout
-      - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@5'
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: install-npm-wee
+          name: install dependencies
           command: npm install
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
